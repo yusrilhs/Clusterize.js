@@ -108,7 +108,7 @@ var Clusterize = function(data) {
     self.html((clean ? self.generateEmptyRow() : rows).join(''));
   }
   self.refresh = function(force) {
-    if(self.getRowsHeight(rows) || force) self.update(rows);
+    if(self.getRowsHeight(rows) || force) self.update();
   }
   self.update = function() {
     var scroll_top = self.scroll_elem.scrollTop;
